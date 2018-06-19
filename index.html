@@ -5,19 +5,19 @@
   <title>Survey Form</title>
 </head>
 <body>
-  <h1 id="title">Survey Form Demo</h1>
+  <h1 id="title">Survey Form</h1>
   <p id="description">A survey form project</p>
   <form id="survey-form" action="">
     <label for="name" id="name-label">Name:</label>
-    <input type="text" id="name" placeholder="Your name here" required>
+    <input type="text" id="name" placeholder="Your name" required>
     <label for="email" id="email-label">Email:</label>
-    <input type="email" id="email" placeholder="Your email here" required>
+    <input type="email" id="email" placeholder="Your email" required>
     <label for="number" id="number-label">Age:</label>
-    <input id="number" type="number" min="1" max="125" placeholder="Your age">
+    <input id="number" type="number" min="1" max="125" placeholder="Age">
     <fieldset>
       <legend>Sex:</legend>
-      <input type="radio" name="age-group" value="male"> Male
-      <input type="radio" name="age-group" value="female"> Female
+      <input type="radio" name="sex" value="male"> Male
+      <input type="radio" name="sex" value="female"> Female
     </fieldset>
     <label for="dropdown">Sex:</label>
     <select id="dropdown" name="dropdown">
@@ -41,6 +41,5 @@
 
   </form>
 
-  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 </html>
