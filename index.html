@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Survey Form</title>
+</head>
+<body>
+  <h1 id="title">Survey Form Demo</h1>
+  <p id="description">A survey form project</p>
+  <form id="survey-form" action="">
+    <label for="name" id="name-label">Name:</label>
+    <input type="text" id="name" placeholder="Enter your name here" required>
+    <label for="email" id="email-label">Email:</label>
+    <input type="email" id="email" placeholder="Enter your email here" required>
+    <label for="number" id="number-label">Number:</label>
+    <input id="number" type="number" min="1111111" max="9999999999999" placeholder="Enter your number here">
+    <label for="dropdown">Sex:</label>
+    <select id="dropdown" name="dropdown">
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+    </select>
+    <fieldset>
+      <legend>Select your age group:</legend>
+      <input type="radio" name="age-group" value="0"> Below 18 years
+      <input type="radio" name="age-group" value="1" checked> 18 to 30 years
+      <input type="radio" name="age-group" value="2"> 31 to 40 years
+      <input type="radio" name="age-group" value="3"> Above 40 years
+    </fieldset>
+    <fieldset>
+      <legend>Select one or more interests:</legend>
+      <input type="checkbox" value="Politics" > Politics
+      <input type="checkbox" value="Technology" > Technology
+      <input type="checkbox" value="Food" > Food
+      <input type="checkbox" value="Entertainment" > Entertainment
+      <input type="checkbox" value="Sports" > Sports
+      <input type="checkbox" value="Health" > Health
+      <input type="checkbox" value="Nature" > Nature
+      <input type="checkbox" value="Religion" > Religion
+    </fieldset>
+    <label for="comments">Additional comments:</label>
+    <textarea id="comments" name="comments" cols="30" rows="10" placeholder="Please enter any additional comments here..."></textarea>
+    <input type="submit" id="submit">
+
+  </form>
+
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
