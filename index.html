@@ -9,23 +9,21 @@
   <p id="description">A survey form project</p>
   <form id="survey-form" action="">
     <label for="name" id="name-label">Name:</label>
-    <input type="text" id="name" placeholder="Enter your name here" required>
+    <input type="text" id="name" placeholder="Your name here" required>
     <label for="email" id="email-label">Email:</label>
-    <input type="email" id="email" placeholder="Enter your email here" required>
-    <label for="number" id="number-label">Number:</label>
-    <input id="number" type="number" min="1111111" max="9999999999999" placeholder="Enter your number here">
+    <input type="email" id="email" placeholder="Your email here" required>
+    <label for="number" id="number-label">Age:</label>
+    <input id="number" type="number" min="1" max="125" placeholder="Your age">
+    <fieldset>
+      <legend>Sex:</legend>
+      <input type="radio" name="age-group" value="male"> Male
+      <input type="radio" name="age-group" value="female"> Female
+    </fieldset>
     <label for="dropdown">Sex:</label>
     <select id="dropdown" name="dropdown">
       <option value="male">Male</option>
       <option value="female">Female</option>
     </select>
-    <fieldset>
-      <legend>Select your age group:</legend>
-      <input type="radio" name="age-group" value="0"> Below 18 years
-      <input type="radio" name="age-group" value="1" checked> 18 to 30 years
-      <input type="radio" name="age-group" value="2"> 31 to 40 years
-      <input type="radio" name="age-group" value="3"> Above 40 years
-    </fieldset>
     <fieldset>
       <legend>Select one or more interests:</legend>
       <input type="checkbox" value="Politics" > Politics
