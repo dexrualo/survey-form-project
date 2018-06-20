@@ -1,0 +1,26 @@
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(10, auto);
+  grid-template-areas:
+    "title title"
+    "label input"
+    "label input"
+    "label input"
+    "label input"
+    "label input"
+    "label input"
+    "label input"
+    "label input"
+    "label input";
+}
+
+label {
+  display: block;
+  grid-area: label;
+}
+
+input {
+  display: block;
+  grid-area: input;
+}
