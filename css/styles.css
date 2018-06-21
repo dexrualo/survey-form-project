@@ -1,26 +1,28 @@
-main {
+form {
   display: grid;
+  grid-gap: 20px;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(10, auto);
-  grid-template-areas:
-    "title title"
-    "label input"
-    "label input"
-    "label input"
-    "label input"
-    "label input"
-    "label input"
-    "label input"
-    "label input"
-    "label input";
 }
 
 label {
   display: block;
-  grid-area: label;
+  justify-self: end;
+  align-self: center;
 }
 
 input {
-  display: block;
-  grid-area: input;
+  align-self: center;
+  justify-self: start;
+}
+
+.choices {
+  display: flex;
+  flex-direction: column;
+  grid-area: 5/1/6/3;
+}
+
+input[type="submit"] {
+  justify-self: center;
+  grid-area: 7/1/8/3;
 }
