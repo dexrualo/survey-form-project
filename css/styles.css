@@ -1,3 +1,8 @@
+main {
+  text-align: center;
+  width: 500px;
+}
+
 form {
   display: grid;
   grid-gap: 20px;
@@ -14,6 +19,9 @@ label {
 input {
   align-self: center;
   justify-self: start;
+}
+
+fieldset {
 }
 
 .choices {
