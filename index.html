@@ -12,17 +12,20 @@
     <form id="survey-form" action="">
       <label for="name" id="name-label">Name:</label>
       <input type="text" id="name" placeholder="Your name" required>
+      <br>
       <label for="email" id="email-label">Email:</label>
       <input type="email" id="email" placeholder="Your email" required>
+      <br>
       <label for="number" id="number-label">Age:</label>
       <input id="number" type="number" min="1" max="125" placeholder="Age">
+      <br>
       <label for="dropdown">Gender:</label>
       <select id="dropdown" name="dropdown">
         <option value="" disabled selected>Select an option</option>
         <option value="male">Male</option>
         <option value="female">Female</option>
       </select>
-      <div class="choices">
+      <br>
         <fieldset>
           <legend>Select one or more interests:</legend>
           <input type="checkbox" value="Politics" > Politics
@@ -43,9 +46,9 @@
           <input type="radio" value="neither"> I don't like them both
           <input type="radio" value="snake"> Snake is the new cute
         </fieldset>
-      </div>
       <label for="comments">Additional comments:</label>
       <textarea id="comments" name="comments" cols="30" rows="10" placeholder="Please enter any additional comments here..."></textarea>
+      <br>
       <input type="submit" id="submit">
 
     </form>
