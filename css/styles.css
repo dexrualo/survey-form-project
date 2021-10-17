@@ -3,5 +3,45 @@
 }
 
 body {
-    margin: 0 5%;
+    background-color: darkslategray;
+}
+
+main {
+    width: 500px;
+    margin: auto;
+    background-color: gainsboro;
+    margin: auto;
+    padding: 10px;
+}
+
+label {
+    display: block;
+}
+
+#title, #description {
+    text-align: center;
+}
+
+form {
+    margin: 0 75px 25px 75px;
+}
+
+fieldset, #last-part {
+    margin: 10px;
+}
+
+input {
+    margin-bottom: 5px;
+}
+
+#submit {
+    margin-top: 10px;
+}
+
+#title {
+    margin-bottom: 0;
+}
+
+#description {
+    margin-top: 0;
 }

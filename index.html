@@ -6,53 +6,116 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <main>
+  <main class="content">
     <h1 id="title">Survey Form</h1>
-    <p id="description">A survey form project</p>
+    <p id="description">A simple survey about you</p>
     <form id="survey-form" action="">
-      <label for="name" id="name-label">Name:</label>
-      <input type="text" id="name" placeholder="Your name" required>
-      <br>
-      <label for="email" id="email-label">Email:</label>
-      <input type="email" id="email" placeholder="Your email" required>
-      <br>
-      <label for="number" id="number-label">Age:</label>
-      <input id="number" type="number" min="1" max="125" placeholder="Age">
-      <br>
-      <label for="dropdown">Gender:</label>
-      <select id="dropdown" name="dropdown">
-        <option value="" disabled selected>Select an option</option>
-        <option value="male">Male</option>
-        <option value="female">Female</option>
-      </select>
-      <br>
-        <fieldset>
-          <legend>Select one or more interests:</legend>
-          <input type="checkbox" value="Politics" > Politics
-          <input type="checkbox" value="Technology" > Technology
-          <input type="checkbox" value="Food" > Food
-          <input type="checkbox" value="Entertainment" > Entertainment
-          <input type="checkbox" value="Sports" > Sports
-          <input type="checkbox" value="Health" > Health
-          <input type="checkbox" value="Nature" > Nature
-          <input type="checkbox" value="Religion" > Religion
-          <input type="checkbox" value="Arts" > Arts
-        </fieldset>
-        <fieldset>
-          <legend>Which pet do you prefer, cat or dog?</legend>
-          <input type="radio" name="pet" value="cat"> Cat
-          <input type="radio" name="pet" value="dog"> Dog
-          <input type="radio" name="pet" value="both"> Both
-          <input type="radio" name="pet" value="neither"> I don't like them both
-          <input type="radio" name="pet" value="snake"> Snake is the new cute
-        </fieldset>
-      <label for="comments">Additional comments:</label>
-      <textarea id="comments" name="comments" cols="30" rows="10" placeholder="Please enter any additional comments here..."></textarea>
-      <br>
-      <input type="submit" id="submit">
+      <fieldset id="basic">
+        <legend>Basic Information:</legend>
+          <label for="name" id="name-label">Name:</label>
+          <input type="text" id="name" placeholder="Your name" required>
+
+          <label for="email" id="email-label">Email:</label>
+          <input type="email" id="email" placeholder="Your email" required>
+
+          <label for="number" id="number-label">Age:</label>
+          <input id="number" type="number" min="1" max="125" placeholder="Age">
+
+          <label for="dropdown">Gender:</label>
+          <select id="dropdown" name="dropdown">
+            <option value="" disabled selected>Select an option</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+          </select>
+      </fieldset>
+
+      <fieldset id="interests">
+        <legend>Select one or more interests:</legend>
+        
+        <label>
+          <input type="checkbox" value="Politics" >
+          <span>Politics</span>
+        </label>
+        
+        <label>
+          <input type="checkbox" value="Technology" >
+          <span>Technology</span>
+        </label>
+        
+        <label>
+          <input type="checkbox" value="Food" >
+          <span>Food</span>
+        </label>
+        
+        <label>
+          <input type="checkbox" value="Entertainment" >
+          <span>Entertainment</span>
+        </label>
+        
+        <label>
+          <input type="checkbox" value="Sports" >
+          <span>Sports</span>
+        </label>
+        
+        <label>
+          <input type="checkbox" value="Health" >
+          <span>Health</span>
+        </label>
+        
+        <label>
+          <input type="checkbox" value="Nature" >
+          <span>Nature</span>
+        </label>
+        
+        <label>
+          <input type="checkbox" value="Religion" >
+          <span>Religion</span>
+        </label>
+        
+        <label>
+          <input type="checkbox" value="Arts" >
+          <span>Arts</span>
+        </label>
+      </fieldset>
+
+      <fieldset id="pet-pref">
+        <legend>Which pet do you prefer, cat or dog?</legend>
+        
+        <label>
+          <input type="radio" name="pet" value="Cat">
+          <span>Cat</span>
+        </label>
+        
+        <label>
+          <input type="radio" name="pet" value="Dog">
+          <span>Dog</span>
+        </label>
+        
+        <label>
+          <input type="radio" name="pet" value="Both">
+          <span>Both</span>
+        </label>
+        
+        <label>
+          <input type="radio" name="pet" value="Neither">
+          <span>I don't like them both</span>
+        </label>
+        
+        <label>
+          <input type="radio" name="pet" value="Snake">
+          <span>Snake is the new cute</span>
+        </label>
+      </fieldset>
+
+      <div id="last-part">
+        <label for="comments">
+          <span>Additional comments:</span>
+          <textarea id="comments" name="comments" cols="30" rows="5" placeholder="Please enter any additional comments here..."></textarea>
+        </label>
+        <input type="submit" id="submit">
+      </div>
 
     </form>
   </main>
-  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 </html>
